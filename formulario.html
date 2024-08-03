@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+
+<body>
+    <h1>Primeiro formulario</h1>
+    <form>
+        <!--legenda para nome-->
+        <label for="campo_nome">Nome:</label>
+        <!--campo input do type text-->
+        <input id="campo_nome" type="text" placeholder="Digite seu nome " required>
+        <br> <br>
+        <!--CAMPO LEGENDA PARA O EMAIL-->
+        <label for="campo_email">E-mail:</label>
+        <!--CAMPO INPUT TYPE EMAIL-->
+        <input id="campo_email" type="email" placeholder="Digite seu E-mail" required>
+        <br> <br>
+        <!--CAMPO LEGENDA PARA SENHA -->
+        <label for="campo_senha">Senha:</label>
+        <!--CAMPO INPUT TYPE PASSWORD -->
+        <input id="campo_senha" type="password" placeholder="Digite sua senha " required>
+        <br> <br>
+        <h2>Você tem animal de estimação?</h2>
+        <!--CAMPO INPUT TYPE RADIO CRIAÇÃO DE BOTÃO DE SELEÇÃO -->
+        <input type="radio" id="dog" name="animal" value="cachorro"><label for="dog">cachorro</label>
+        <input type="radio" id="cat" name="animal" value="gato"><label for="cat">gato</label>
+        <input type="radio" id="bird" name="animal" value="passarinho"><label for="bird">passarinho</label>
+        <br> <br>
+        <h2>Quais desses bancos você usa?</h2>
+        <!-- CAMPO DE CRIAÇÃO DE BOTTÃO DE MULTIPLA ESCOLHA-->
+        <input type="checkbox" id="cartão1" name="Nubank" value="Nubank"><label for="cartão1">Nubank</label>
+        <input type="checkbox" id="cartão2" name="Nubank" value="Itaú"><label for="cartão2">Itaú</label>
+        <input type="checkbox" id="cartão3" name="Nubank" value="Caixa"><label for="cartão3">Caixa Federal</label>
+
+        <br><br>
+        <!--CAMPO DE SELEÇÃO--->
+        <h2> Qual sua cor favorita?</h2>
+        <select required>
+            <option selected disabled value="">Selecione uma cor</option>
+            <option value="azul">azul</option>
+            <option value="vermelho">vermelho</option>
+            <option value="verde">verde</option>
+            <option value="amarelo">amarelo</option>
+            <option value="roxo">roxo</option>
+            <option value="outra">outra</option>
+        </select>
+        <br>
+        <!--campo input do type text-->
+        <br>
+        <textarea name="mensagem" rows="15" cols="55"> Digite qual quer coisa</textarea>
+        <br>
+        <!--CAMPO INPUT TYPE SUBMIT ENVIAR FORMULARIO -->
+        <input required type="submit" value="enviar formulario">
+
+
+
+    </form>
+
+    <br><br>
+
+    <a href="index.html"> <b>Voltar para o menu principal</b></a>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
